@@ -6,7 +6,7 @@ face_cascade=cv2.CascadeClassifier("Face detection\haarcascade_frontalface_defau
 img=cv2.imread("D:\My first project\Face detection\photo.jpg")
 
 
-gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+gray_img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 faces=face_cascade.detectMultiScale(gray_img, 
 scaleFactor=1.05, minNeighbors=5)
